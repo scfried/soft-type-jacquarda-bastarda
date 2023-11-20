@@ -1,4 +1,4 @@
-<h1>The Soft Type Collection, Jacquard</h1>
+<h1>The Soft Type Collection, Jacquarda Bastarda</h1>
 
 <h5>The Typeface</h5>
 <p>Jacquarda Bastarda is an expanded revival typeface from a Bastarda-esque Victorian needlepoint alphabet designed in Berlin by Heinrich Kuehn circa 1880.</p>
