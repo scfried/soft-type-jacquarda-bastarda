@@ -1,7 +1,4 @@
 sources:
-  - Rubik.glyphs
-  - Rubik-Italic.glyphs
-axisOrder:
-  - wght
-  - ital
-familyName: Rubik
+  - Jacquarda-Bastarda-9.glyphs
+familyName: Jacquarda Bastarda 9
+buildOTF: false
