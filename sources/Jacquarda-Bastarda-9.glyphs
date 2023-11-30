@@ -1,6 +1,9 @@
 {
 .appVersion = "3227";
 .formatVersion = 3;
+DisplayStrings = (
+"„"
+);
 classes = (
 {
 automatic = 1;
@@ -16513,18 +16516,20 @@ unicode = 8218;
 },
 {
 glyphname = quotedblbase;
+lastChange = "2023-11-30 15:57:14 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
+pos = (320,0);
 ref = comma;
 },
 {
 ref = comma;
 }
 );
-width = 320;
+width = 640;
 }
 );
 unicode = 8222;
