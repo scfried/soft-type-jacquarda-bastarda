@@ -14610,11 +14610,153 @@ unicode = 57;
 },
 {
 glyphname = .notdef;
-lastChange = "2023-10-27 19:43:56 +0000";
+lastChange = "2023-11-30 15:55:56 +0000";
 layers = (
 {
 layerId = m01;
-width = 400;
+shapes = (
+{
+alignment = -1;
+pos = (480,240);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,320);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,480);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,400);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,560);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,640);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (400,720);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (320,720);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (240,720);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (160,720);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,640);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,560);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,480);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,400);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,320);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,240);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,160);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,80);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,160);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,80);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,0);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,-80);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (160,-160);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (240,-160);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (320,-160);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (400,-160);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,-80);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,0);
+ref = pixel;
+}
+);
+width = 560;
 }
 );
 },
