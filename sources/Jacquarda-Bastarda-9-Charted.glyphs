@@ -1,11 +1,25 @@
 {
 .appVersion = "3227";
 .formatVersion = 3;
+DisplayStrings = (
+"Ľď ľ ť "
+);
 classes = (
 {
 automatic = 1;
 code = "A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcommaaccent Gdotaccent H Hbar I IJ Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek J Jacute K Kcommaaccent L Lacute Lcaron Lcommaaccent Lslash M N Nacute Ncaron Ncommaaccent Ntilde Eng O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent Germandbls T Tcaron Tcommaaccent U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent";
 name = Uppercase;
+}
+);
+customParameters = (
+{
+name = fsType;
+value = (
+);
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 date = "2023-06-04 20:05:16 +0000";
@@ -131,6 +145,40 @@ tag = case;
 );
 fontMaster = (
 {
+customParameters = (
+{
+name = typoAscender;
+value = 985;
+},
+{
+name = typoDescender;
+value = -265;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = winAscent;
+value = 1040;
+},
+{
+name = winDescent;
+value = 320;
+},
+{
+name = hheaAscender;
+value = 985;
+},
+{
+name = hheaDescender;
+value = -265;
+},
+{
+name = hheaLineGap;
+value = 0;
+}
+);
 id = m01;
 metricValues = (
 {
@@ -53617,7 +53665,7 @@ unicode = 313;
 },
 {
 glyphname = Lcaron;
-lastChange = "2023-11-01 12:18:31 +0000";
+lastChange = "2023-11-30 16:54:33 +0000";
 layers = (
 {
 anchors = (
@@ -54482,28 +54530,19 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(320,880,l),
-(320,960,l),
-(240,960,l),
-(240,880,l)
+(640,560,l),
+(720,560,l),
+(720,640,l),
+(640,640,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(320,800,l),
-(400,800,l),
-(400,880,l),
-(320,880,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(400,880,l),
-(480,880,l),
-(480,960,l),
-(400,960,l)
+(640,560,l),
+(720,560,l),
+(720,640,l),
+(640,640,l)
 );
 }
 );
@@ -183014,7 +183053,7 @@ unicode = 116;
 },
 {
 glyphname = tcaron;
-lastChange = "2023-11-01 12:18:31 +0000";
+lastChange = "2023-11-30 16:52:09 +0000";
 layers = (
 {
 anchors = (
@@ -258227,7 +258266,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright 2023 The Soft Type Project Authors (https://github.com/scfried/soft-type)";
+value = "Copyright 2023 The Soft Type Project Authors (https://github.com/scfried/soft-type-jacquarda-bastarda)";
 }
 );
 },
@@ -258245,8 +258284,7 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
-";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 }
 );
 },

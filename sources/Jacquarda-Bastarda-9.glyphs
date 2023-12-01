@@ -1,9 +1,6 @@
 {
 .appVersion = "3227";
 .formatVersion = 3;
-DisplayStrings = (
-"„"
-);
 classes = (
 {
 automatic = 1;
@@ -3775,20 +3772,22 @@ unicode = 313;
 },
 {
 glyphname = Lcaron;
-lastChange = "2023-10-27 22:23:22 +0000";
+lastChange = "2023-11-30 16:00:06 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
+alignment = -1;
 ref = L;
 },
 {
-pos = (320,160);
+alignment = -1;
+pos = (640,-160);
 ref = caroncomb.alt;
 }
 );
-width = 640;
+width = 720;
 }
 );
 unicode = 317;
@@ -9169,7 +9168,7 @@ unicode = 240;
 },
 {
 glyphname = dcaron;
-lastChange = "2023-10-22 20:00:05 +0000";
+lastChange = "2023-11-30 16:03:24 +0000";
 layers = (
 {
 layerId = m01;
@@ -9178,8 +9177,9 @@ shapes = (
 ref = d;
 },
 {
-pos = (240,80);
-ref = caroncomb;
+alignment = -1;
+pos = (400,0);
+ref = caroncomb.alt;
 }
 );
 width = 480;
@@ -10760,20 +10760,22 @@ unicode = 314;
 },
 {
 glyphname = lcaron;
-lastChange = "2023-10-22 20:17:16 +0000";
+lastChange = "2023-11-30 16:03:44 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
+alignment = -1;
 ref = l;
 },
 {
-pos = (80,160);
-ref = caroncomb;
+alignment = -1;
+pos = (400,0);
+ref = caroncomb.alt;
 }
 );
-width = 320;
+width = 480;
 }
 );
 unicode = 318;
@@ -12653,20 +12655,22 @@ unicode = 116;
 },
 {
 glyphname = tcaron;
-lastChange = "2023-10-27 19:42:58 +0000";
+lastChange = "2023-11-30 16:04:02 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
+alignment = -1;
 ref = t;
 },
 {
-pos = (160,80);
-ref = caroncomb;
+alignment = -1;
+pos = (400,0);
+ref = caroncomb.alt;
 }
 );
-width = 400;
+width = 480;
 }
 );
 unicode = 357;
