@@ -1,15 +1,189 @@
 {
-.appVersion = "3151";
+.appVersion = "3227";
 .formatVersion = 3;
+classes = (
+{
+automatic = 1;
+code = "A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcommaaccent Gdotaccent H Hbar I IJ Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek J Jacute K Kcommaaccent L Lacute Lcaron Lcommaaccent Lslash M N Nacute Ncaron Ncommaaccent Ntilde Eng O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent Germandbls T Tcaron Tcommaaccent U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent";
+name = Uppercase;
+}
+);
+customParameters = (
+{
+name = fsType;
+value = (
+);
+},
+{
+name = "Use Typo Metrics";
+value = 1;
+}
+);
 date = "2023-06-04 20:05:16 +0000";
 familyName = "Jacquarda Bastarda 9";
+featurePrefixes = (
+{
+automatic = 1;
+code = "languagesystem DFLT dflt;
+
+languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CRT;
+languagesystem latn KAZ;
+languagesystem latn TAT;
+languagesystem latn TRK;
+languagesystem latn ROM;
+languagesystem latn MOL;
+languagesystem latn CAT;
+languagesystem latn NLD;
+";
+name = Languagesystems;
+}
+);
+features = (
+{
+automatic = 1;
+code = "feature locl;
+feature ordn;
+feature case;
+";
+tag = aalt;
+},
+{
+automatic = 1;
+code = "lookup ccmp_Other_1 {
+	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
+	lookupflag UseMarkFilteringSet @CombiningTopAccents;
+	sub i' @CombiningTopAccents by idotless;
+	sub j' @CombiningTopAccents by jdotless;
+} ccmp_Other_1;
+
+lookup ccmp_Other_2 {
+	lookupflag 0;
+	@Markscomb = [dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb circumflexcomb caroncomb brevecomb ringcomb tildecomb macroncomb];
+	@MarkscombCase = [dieresiscomb.case dotaccentcomb.case gravecomb.case acutecomb.case hungarumlautcomb.case circumflexcomb.case caroncomb.case brevecomb.case ringcomb.case tildecomb.case macroncomb.case];
+	sub @Markscomb @Markscomb' by @MarkscombCase;
+	sub @Uppercase @Markscomb' by @MarkscombCase;
+} ccmp_Other_2;
+
+lookup ccmp_Other_3 {
+	lookupflag 0;
+	sub @Markscomb' @MarkscombCase by @MarkscombCase;
+	sub @MarkscombCase @Markscomb' by @MarkscombCase;
+} ccmp_Other_3;
+";
+tag = ccmp;
+},
+{
+automatic = 1;
+code = "script latn;
+language AZE;
+lookup locl_latn_0 {
+	sub i by idotaccent;
+} locl_latn_0;
+language CRT;
+lookup locl_latn_0;
+language KAZ;
+lookup locl_latn_0;
+language TAT;
+lookup locl_latn_0;
+language TRK;
+lookup locl_latn_0;
+
+script latn;
+language ROM;
+lookup locl_latn_1 {
+	sub Scedilla by Scommaaccent;
+	sub scedilla by scommaaccent;
+} locl_latn_1;
+language MOL;
+lookup locl_latn_1;
+
+script latn;
+language CAT;
+lookup locl_latn_2 {
+	sub l periodcentered' l by periodcentered.loclCAT;
+	sub L periodcentered' L by periodcentered.loclCAT.case;
+} locl_latn_2;
+
+script latn;
+language NLD;
+lookup locl_latn_3 {
+	sub iacute j' by jacute;
+	sub Iacute J' by Jacute;
+} locl_latn_3;
+";
+tag = locl;
+},
+{
+automatic = 1;
+code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
+sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
+";
+tag = ordn;
+},
+{
+automatic = 1;
+code = "sub periodcentered.loclCAT by periodcentered.loclCAT.case;
+sub dieresiscomb by dieresiscomb.case;
+sub dotaccentcomb by dotaccentcomb.case;
+sub gravecomb by gravecomb.case;
+sub acutecomb by acutecomb.case;
+sub hungarumlautcomb by hungarumlautcomb.case;
+sub circumflexcomb by circumflexcomb.case;
+sub caroncomb by caroncomb.case;
+sub brevecomb by brevecomb.case;
+sub ringcomb by ringcomb.case;
+sub tildecomb by tildecomb.case;
+sub macroncomb by macroncomb.case;
+";
+tag = case;
+}
+);
 fontMaster = (
 {
+customParameters = (
+{
+name = typoAscender;
+value = 985;
+},
+{
+name = typoDescender;
+value = -265;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = winAscent;
+value = 1040;
+},
+{
+name = winDescent;
+value = 320;
+},
+{
+name = hheaAscender;
+value = 985;
+},
+{
+name = hheaDescender;
+value = -265;
+},
+{
+name = hheaLineGap;
+value = 0;
+}
+);
 id = m01;
 metricValues = (
 {
 over = 16;
 pos = 800;
+},
+{
+pos = 720;
 },
 {
 over = -16;
@@ -31,7 +205,7 @@ name = Regular;
 glyphs = (
 {
 glyphname = A;
-lastChange = "2023-07-24 19:43:19 +0000";
+lastChange = "2023-11-30 15:48:41 +0000";
 layers = (
 {
 anchors = (
@@ -46,6 +220,11 @@ pos = (800,0);
 {
 name = top.case;
 pos = (480,720);
+}
+);
+guides = (
+{
+pos = (80,720);
 }
 );
 layerId = m01;
@@ -3593,20 +3772,22 @@ unicode = 313;
 },
 {
 glyphname = Lcaron;
-lastChange = "2023-10-27 22:23:22 +0000";
+lastChange = "2023-11-30 16:00:06 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
+alignment = -1;
 ref = L;
 },
 {
-pos = (320,160);
+alignment = -1;
+pos = (640,-160);
 ref = caroncomb.alt;
 }
 );
-width = 640;
+width = 720;
 }
 );
 unicode = 317;
@@ -8987,7 +9168,7 @@ unicode = 240;
 },
 {
 glyphname = dcaron;
-lastChange = "2023-10-22 20:00:05 +0000";
+lastChange = "2023-11-30 16:03:24 +0000";
 layers = (
 {
 layerId = m01;
@@ -8996,8 +9177,9 @@ shapes = (
 ref = d;
 },
 {
-pos = (240,80);
-ref = caroncomb;
+alignment = -1;
+pos = (400,0);
+ref = caroncomb.alt;
 }
 );
 width = 480;
@@ -10578,20 +10760,22 @@ unicode = 314;
 },
 {
 glyphname = lcaron;
-lastChange = "2023-10-22 20:17:16 +0000";
+lastChange = "2023-11-30 16:03:44 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
+alignment = -1;
 ref = l;
 },
 {
-pos = (80,160);
-ref = caroncomb;
+alignment = -1;
+pos = (400,0);
+ref = caroncomb.alt;
 }
 );
-width = 320;
+width = 480;
 }
 );
 unicode = 318;
@@ -12471,20 +12655,22 @@ unicode = 116;
 },
 {
 glyphname = tcaron;
-lastChange = "2023-10-27 19:42:58 +0000";
+lastChange = "2023-11-30 16:04:02 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
+alignment = -1;
 ref = t;
 },
 {
-pos = (160,80);
-ref = caroncomb;
+alignment = -1;
+pos = (400,0);
+ref = caroncomb.alt;
 }
 );
-width = 400;
+width = 480;
 }
 );
 unicode = 357;
@@ -14431,11 +14617,153 @@ unicode = 57;
 },
 {
 glyphname = .notdef;
-lastChange = "2023-10-27 19:43:56 +0000";
+lastChange = "2023-11-30 15:55:56 +0000";
 layers = (
 {
 layerId = m01;
-width = 400;
+shapes = (
+{
+alignment = -1;
+pos = (480,240);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,320);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,480);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,400);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,560);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,640);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (400,720);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (320,720);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (240,720);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (160,720);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,640);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,560);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,480);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,400);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,320);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,240);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,160);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,80);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,160);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,80);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,0);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (80,-80);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (160,-160);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (240,-160);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (320,-160);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (400,-160);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,-80);
+ref = pixel;
+},
+{
+alignment = -1;
+pos = (480,0);
+ref = pixel;
+}
+);
+width = 560;
 }
 );
 },
@@ -16192,18 +16520,20 @@ unicode = 8218;
 },
 {
 glyphname = quotedblbase;
+lastChange = "2023-11-30 15:57:14 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
+pos = (320,0);
 ref = comma;
 },
 {
 ref = comma;
 }
 );
-width = 320;
+width = 640;
 }
 );
 unicode = 8222;
@@ -20101,6 +20431,14 @@ width = 80;
 );
 }
 );
+instances = (
+{
+instanceInterpolations = {
+m01 = 1;
+};
+name = Regular;
+}
+);
 kerningLTR = {
 m01 = {
 T = {
@@ -20140,6 +20478,9 @@ metrics = (
 type = ascender;
 },
 {
+type = "cap height";
+},
+{
 type = baseline;
 },
 {
@@ -20158,7 +20499,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright 2023 The Soft Type Project Authors (https://github.com/scfried/soft-type)";
+value = "Copyright 2023 The Soft Type Project Authors (https://github.com/scfried/soft-type-jacquarda-bastarda)";
 }
 );
 },
@@ -20176,8 +20517,7 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
-";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 }
 );
 },
