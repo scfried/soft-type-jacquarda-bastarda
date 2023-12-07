@@ -1,184 +1,10 @@
 {
-.appVersion = "3227";
+.appVersion = "3151";
 .formatVersion = 3;
-DisplayStrings = (
-"Ľď ľ ť "
-);
-classes = (
-{
-automatic = 1;
-code = "A Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek F G Gbreve Gcommaaccent Gdotaccent H Hbar I IJ Iacute Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek J Jacute K Kcommaaccent L Lacute Lcaron Lcommaaccent Lslash M N Nacute Ncaron Ncommaaccent Ntilde Eng O Oacute Ocircumflex Odieresis Ograve Ohungarumlaut Omacron Oslash Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Scaron Scedilla Scommaaccent Germandbls T Tcaron Tcommaaccent U Uacute Ubreve Ucircumflex Udieresis Ugrave Uhungarumlaut Umacron Uogonek Uring V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Z Zacute Zcaron Zdotaccent";
-name = Uppercase;
-}
-);
-customParameters = (
-{
-name = fsType;
-value = (
-);
-},
-{
-name = "Use Typo Metrics";
-value = 1;
-}
-);
 date = "2023-06-04 20:05:16 +0000";
 familyName = "Jacquarda Bastarda 9 Charted";
-featurePrefixes = (
-{
-automatic = 1;
-code = "languagesystem DFLT dflt;
-
-languagesystem latn dflt;
-languagesystem latn AZE;
-languagesystem latn CRT;
-languagesystem latn KAZ;
-languagesystem latn TAT;
-languagesystem latn TRK;
-languagesystem latn ROM;
-languagesystem latn MOL;
-languagesystem latn CAT;
-languagesystem latn NLD;
-";
-name = Languagesystems;
-}
-);
-features = (
-{
-automatic = 1;
-code = "feature locl;
-feature ordn;
-feature case;
-";
-tag = aalt;
-},
-{
-automatic = 1;
-code = "lookup ccmp_Other_1 {
-	@CombiningTopAccents = [acutecomb brevecomb caroncomb circumflexcomb commaturnedabovecomb dieresiscomb dotaccentcomb gravecomb hungarumlautcomb macroncomb ringcomb tildecomb];
-	lookupflag UseMarkFilteringSet @CombiningTopAccents;
-	sub i' @CombiningTopAccents by idotless;
-	sub j' @CombiningTopAccents by jdotless;
-} ccmp_Other_1;
-
-lookup ccmp_Other_2 {
-	lookupflag 0;
-	@Markscomb = [dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb circumflexcomb caroncomb brevecomb ringcomb tildecomb macroncomb];
-	@MarkscombCase = [dieresiscomb.case dotaccentcomb.case gravecomb.case acutecomb.case hungarumlautcomb.case circumflexcomb.case caroncomb.case brevecomb.case ringcomb.case tildecomb.case macroncomb.case];
-	sub @Markscomb @Markscomb' by @MarkscombCase;
-	sub @Uppercase @Markscomb' by @MarkscombCase;
-} ccmp_Other_2;
-
-lookup ccmp_Other_3 {
-	lookupflag 0;
-	sub @Markscomb' @MarkscombCase by @MarkscombCase;
-	sub @MarkscombCase @Markscomb' by @MarkscombCase;
-} ccmp_Other_3;
-";
-tag = ccmp;
-},
-{
-automatic = 1;
-code = "script latn;
-language AZE;
-lookup locl_latn_0 {
-	sub i by idotaccent;
-} locl_latn_0;
-language CRT;
-lookup locl_latn_0;
-language KAZ;
-lookup locl_latn_0;
-language TAT;
-lookup locl_latn_0;
-language TRK;
-lookup locl_latn_0;
-
-script latn;
-language ROM;
-lookup locl_latn_1 {
-	sub Scedilla by Scommaaccent;
-	sub scedilla by scommaaccent;
-} locl_latn_1;
-language MOL;
-lookup locl_latn_1;
-
-script latn;
-language CAT;
-lookup locl_latn_2 {
-	sub l periodcentered' l by periodcentered.loclCAT;
-	sub L periodcentered' L by periodcentered.loclCAT.case;
-} locl_latn_2;
-
-script latn;
-language NLD;
-lookup locl_latn_3 {
-	sub iacute j' by jacute;
-	sub Iacute J' by Jacute;
-} locl_latn_3;
-";
-tag = locl;
-},
-{
-automatic = 1;
-code = "sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
-sub [zero one two three four five six seven eight nine] [O o]' by ordmasculine;
-";
-tag = ordn;
-},
-{
-automatic = 1;
-code = "sub periodcentered.loclCAT by periodcentered.loclCAT.case;
-sub dieresiscomb by dieresiscomb.case;
-sub dotaccentcomb by dotaccentcomb.case;
-sub gravecomb by gravecomb.case;
-sub acutecomb by acutecomb.case;
-sub hungarumlautcomb by hungarumlautcomb.case;
-sub circumflexcomb by circumflexcomb.case;
-sub caroncomb by caroncomb.case;
-sub brevecomb by brevecomb.case;
-sub ringcomb by ringcomb.case;
-sub tildecomb by tildecomb.case;
-sub macroncomb by macroncomb.case;
-";
-tag = case;
-}
-);
 fontMaster = (
 {
-customParameters = (
-{
-name = typoAscender;
-value = 985;
-},
-{
-name = typoDescender;
-value = -265;
-},
-{
-name = typoLineGap;
-value = 0;
-},
-{
-name = winAscent;
-value = 1040;
-},
-{
-name = winDescent;
-value = 320;
-},
-{
-name = hheaAscender;
-value = 985;
-},
-{
-name = hheaDescender;
-value = -265;
-},
-{
-name = hheaLineGap;
-value = 0;
-}
-);
 id = m01;
 metricValues = (
 {
@@ -53665,7 +53491,7 @@ unicode = 313;
 },
 {
 glyphname = Lcaron;
-lastChange = "2023-11-30 16:54:33 +0000";
+lastChange = "2023-12-07 11:24:16 +0000";
 layers = (
 {
 anchors = (
@@ -54539,14 +54365,83 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(640,560,l),
+(640,480,l),
+(720,480,l),
 (720,560,l),
+(640,560,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(640,-240,l),
+(720,-240,l),
+(720,-235,l),
+(645,-235,l),
+(645,-160,l),
+(720,-160,l),
+(720,-155,l),
+(645,-155,l),
+(645,-80,l),
+(720,-80,l),
+(720,-75,l),
+(645,-75,l),
+(645,0,l),
+(720,0,l),
+(720,5,l),
+(645,5,l),
+(645,80,l),
+(720,80,l),
+(720,85,l),
+(645,85,l),
+(645,160,l),
+(720,160,l),
+(720,165,l),
+(645,165,l),
+(645,240,l),
+(720,240,l),
+(720,245,l),
+(645,245,l),
+(645,320,l),
+(720,320,l),
+(720,325,l),
+(645,325,l),
+(645,400,l),
+(720,400,l),
+(720,405,l),
+(645,405,l),
+(645,480,l),
+(720,480,l),
+(720,485,l),
+(645,485,l),
+(645,560,l),
+(720,560,l),
+(720,565,l),
+(645,565,l),
+(645,640,l),
 (720,640,l),
-(640,640,l)
+(720,645,l),
+(645,645,l),
+(645,720,l),
+(720,720,l),
+(720,725,l),
+(645,725,l),
+(645,800,l),
+(720,800,l),
+(720,805,l),
+(645,805,l),
+(645,880,l),
+(720,880,l),
+(720,885,l),
+(645,885,l),
+(645,960,l),
+(720,960,l),
+(720,965,l),
+(640,965,l)
 );
 }
 );
-width = 640;
+width = 720;
 }
 );
 unicode = 317;
@@ -134373,7 +134268,7 @@ unicode = 240;
 },
 {
 glyphname = dcaron;
-lastChange = "2023-11-01 12:18:31 +0000";
+lastChange = "2023-12-07 11:24:23 +0000";
 layers = (
 {
 anchors = (
@@ -135024,28 +134919,19 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(320,800,l),
-(320,880,l),
-(240,880,l),
-(240,800,l)
+(400,720,l),
+(480,720,l),
+(480,800,l),
+(400,800,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(240,880,l),
-(240,960,l),
-(160,960,l),
-(160,880,l)
-);
-},
-{
-closed = 1;
-nodes = (
-(400,880,l),
-(400,960,l),
-(320,960,l),
-(320,880,l)
+(400,640,l),
+(480,640,l),
+(480,720,l),
+(400,720,l)
 );
 }
 );
@@ -156549,7 +156435,7 @@ unicode = 314;
 },
 {
 glyphname = lcaron;
-lastChange = "2023-11-01 12:18:31 +0000";
+lastChange = "2023-12-07 11:24:30 +0000";
 layers = (
 {
 anchors = (
@@ -156969,32 +156855,161 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(240,800,l),
-(240,880,l),
-(160,880,l),
-(160,800,l)
+(400,720,l),
+(480,720,l),
+(480,800,l),
+(400,800,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(160,880,l),
-(160,960,l),
-(80,960,l),
-(80,880,l)
+(400,640,l),
+(480,640,l),
+(480,720,l),
+(400,720,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(320,880,l),
-(320,960,l),
-(240,960,l),
-(240,880,l)
+(400,-240,l),
+(480,-240,l),
+(480,-235,l),
+(405,-235,l),
+(405,-160,l),
+(480,-160,l),
+(480,-155,l),
+(405,-155,l),
+(405,-80,l),
+(480,-80,l),
+(480,-75,l),
+(405,-75,l),
+(405,0,l),
+(480,0,l),
+(480,5,l),
+(405,5,l),
+(405,80,l),
+(480,80,l),
+(480,85,l),
+(405,85,l),
+(405,160,l),
+(480,160,l),
+(480,165,l),
+(405,165,l),
+(405,240,l),
+(480,240,l),
+(480,245,l),
+(405,245,l),
+(405,320,l),
+(480,320,l),
+(480,325,l),
+(405,325,l),
+(405,400,l),
+(480,400,l),
+(480,405,l),
+(405,405,l),
+(405,480,l),
+(480,480,l),
+(480,485,l),
+(405,485,l),
+(405,560,l),
+(480,560,l),
+(480,565,l),
+(405,565,l),
+(405,640,l),
+(480,640,l),
+(480,645,l),
+(405,645,l),
+(405,720,l),
+(480,720,l),
+(480,725,l),
+(405,725,l),
+(405,800,l),
+(480,800,l),
+(480,805,l),
+(405,805,l),
+(405,880,l),
+(480,880,l),
+(480,885,l),
+(405,885,l),
+(405,960,l),
+(480,960,l),
+(480,965,l),
+(400,965,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(320,-240,l),
+(400,-240,l),
+(400,-235,l),
+(325,-235,l),
+(325,-160,l),
+(400,-160,l),
+(400,-155,l),
+(325,-155,l),
+(325,-80,l),
+(400,-80,l),
+(400,-75,l),
+(325,-75,l),
+(325,0,l),
+(400,0,l),
+(400,5,l),
+(325,5,l),
+(325,80,l),
+(400,80,l),
+(400,85,l),
+(325,85,l),
+(325,160,l),
+(400,160,l),
+(400,165,l),
+(325,165,l),
+(325,240,l),
+(400,240,l),
+(400,245,l),
+(325,245,l),
+(325,320,l),
+(400,320,l),
+(400,325,l),
+(325,325,l),
+(325,400,l),
+(400,400,l),
+(400,405,l),
+(325,405,l),
+(325,480,l),
+(400,480,l),
+(400,485,l),
+(325,485,l),
+(325,560,l),
+(400,560,l),
+(400,565,l),
+(325,565,l),
+(325,640,l),
+(400,640,l),
+(400,645,l),
+(325,645,l),
+(325,720,l),
+(400,720,l),
+(400,725,l),
+(325,725,l),
+(325,800,l),
+(400,800,l),
+(400,805,l),
+(325,805,l),
+(325,880,l),
+(400,880,l),
+(400,885,l),
+(325,885,l),
+(325,960,l),
+(400,960,l),
+(400,965,l),
+(320,965,l)
 );
 }
 );
-width = 320;
+width = 480;
 }
 );
 unicode = 318;
@@ -183053,7 +183068,7 @@ unicode = 116;
 },
 {
 glyphname = tcaron;
-lastChange = "2023-11-30 16:52:09 +0000";
+lastChange = "2023-12-07 11:24:41 +0000";
 layers = (
 {
 anchors = (
@@ -183590,32 +183605,92 @@ nodes = (
 {
 closed = 1;
 nodes = (
-(320,720,l),
-(320,800,l),
-(240,800,l),
-(240,720,l)
+(400,720,l),
+(480,720,l),
+(480,800,l),
+(400,800,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(240,800,l),
-(240,880,l),
-(160,880,l),
-(160,800,l)
+(400,640,l),
+(480,640,l),
+(480,720,l),
+(400,720,l)
 );
 },
 {
 closed = 1;
 nodes = (
-(400,800,l),
-(400,880,l),
-(320,880,l),
-(320,800,l)
+(400,-240,l),
+(480,-240,l),
+(480,-235,l),
+(405,-235,l),
+(405,-160,l),
+(480,-160,l),
+(480,-155,l),
+(405,-155,l),
+(405,-80,l),
+(480,-80,l),
+(480,-75,l),
+(405,-75,l),
+(405,0,l),
+(480,0,l),
+(480,5,l),
+(405,5,l),
+(405,80,l),
+(480,80,l),
+(480,85,l),
+(405,85,l),
+(405,160,l),
+(480,160,l),
+(480,165,l),
+(405,165,l),
+(405,240,l),
+(480,240,l),
+(480,245,l),
+(405,245,l),
+(405,320,l),
+(480,320,l),
+(480,325,l),
+(405,325,l),
+(405,400,l),
+(480,400,l),
+(480,405,l),
+(405,405,l),
+(405,480,l),
+(480,480,l),
+(480,485,l),
+(405,485,l),
+(405,560,l),
+(480,560,l),
+(480,565,l),
+(405,565,l),
+(405,640,l),
+(480,640,l),
+(480,645,l),
+(405,645,l),
+(405,720,l),
+(480,720,l),
+(480,725,l),
+(405,725,l),
+(405,800,l),
+(480,800,l),
+(480,805,l),
+(405,805,l),
+(405,880,l),
+(480,880,l),
+(480,885,l),
+(405,885,l),
+(405,960,l),
+(480,960,l),
+(480,965,l),
+(400,965,l)
 );
 }
 );
-width = 400;
+width = 480;
 }
 );
 unicode = 357;
@@ -258201,14 +258276,6 @@ width = 80;
 );
 }
 );
-instances = (
-{
-instanceInterpolations = {
-m01 = 1;
-};
-name = Regular;
-}
-);
 kerningLTR = {
 m01 = {
 T = {
@@ -258266,7 +258333,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright 2023 The Soft Type Project Authors (https://github.com/scfried/soft-type-jacquarda-bastarda)";
+value = "Copyright 2023 The Soft Type Project Authors (https://github.com/scfried/soft-type)";
 }
 );
 },
@@ -258284,7 +258351,8 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+";
 }
 );
 },
