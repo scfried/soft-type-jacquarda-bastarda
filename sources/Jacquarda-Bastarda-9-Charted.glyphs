@@ -1,10 +1,59 @@
 {
-.appVersion = "3151";
+.appVersion = "3227";
 .formatVersion = 3;
+customParameters = (
+{
+name = "Use Typo Metrics";
+value = 1;
+},
+{
+name = fsType;
+value = (
+);
+},
+{
+name = "Disable Subroutines";
+value = 1;
+}
+);
 date = "2023-06-04 20:05:16 +0000";
 familyName = "Jacquarda Bastarda 9 Charted";
 fontMaster = (
 {
+customParameters = (
+{
+name = typoAscender;
+value = 960;
+},
+{
+name = typoDescender;
+value = -240;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = winAscent;
+value = 960;
+},
+{
+name = winDescent;
+value = 240;
+},
+{
+name = hheaAscender;
+value = 960;
+},
+{
+name = hheaDescender;
+value = -240;
+},
+{
+name = hheaLineGap;
+value = 0;
+}
+);
 id = m01;
 metricValues = (
 {
@@ -13186,7 +13235,7 @@ unicode = 198;
 },
 {
 glyphname = B;
-lastChange = "2023-11-01 12:18:31 +0000";
+lastChange = "2023-07-20 11:49:52 +0000";
 layers = (
 {
 layerId = m01;
@@ -22070,7 +22119,7 @@ unicode = 270;
 },
 {
 glyphname = Dcroat;
-lastChange = "2023-11-01 12:18:31 +0000";
+lastChange = "2023-10-22 20:21:24 +0000";
 layers = (
 {
 layerId = m01;
@@ -258276,6 +258325,14 @@ width = 80;
 );
 }
 );
+instances = (
+{
+instanceInterpolations = {
+m01 = 1;
+};
+name = Regular;
+}
+);
 kerningLTR = {
 m01 = {
 T = {
@@ -258333,7 +258390,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright 2023 The Soft Type Project Authors (https://github.com/scfried/soft-type)";
+value = "Copyright 2023 The Soft Type Project Authors (https://github.com/scfried/soft-type-jacquarda-bastarda)";
 }
 );
 },
@@ -258351,8 +258408,7 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
-";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 }
 );
 },
