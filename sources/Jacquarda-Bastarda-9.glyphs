@@ -1,5 +1,5 @@
 {
-.appVersion = "3227";
+.appVersion = "3151";
 .formatVersion = 3;
 classes = (
 {
@@ -12878,7 +12878,7 @@ unicode = 251;
 },
 {
 glyphname = udieresis;
-lastChange = "2023-07-24 19:53:53 +0000";
+lastChange = "2023-12-14 19:39:34 +0000";
 layers = (
 {
 layerId = m01;
