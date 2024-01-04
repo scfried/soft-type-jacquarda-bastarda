@@ -1,6 +1,9 @@
 {
-.appVersion = "3151";
+.appVersion = "3231";
 .formatVersion = 3;
+DisplayStrings = (
+"ŵ"
+);
 customParameters = (
 {
 name = "Use Typo Metrics";
@@ -23,11 +26,11 @@ fontMaster = (
 customParameters = (
 {
 name = typoAscender;
-value = 960;
+value = 1040;
 },
 {
 name = typoDescender;
-value = -240;
+value = -320;
 },
 {
 name = typoLineGap;
@@ -35,19 +38,19 @@ value = 0;
 },
 {
 name = winAscent;
-value = 960;
+value = 1040;
 },
 {
 name = winDescent;
-value = 240;
+value = 320;
 },
 {
 name = hheaAscender;
-value = 960;
+value = 1040;
 },
 {
 name = hheaDescender;
-value = -240;
+value = -320;
 },
 {
 name = hheaLineGap;
