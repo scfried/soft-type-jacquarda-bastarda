@@ -1,9 +1,6 @@
 {
-.appVersion = "3231";
+.appVersion = "3234";
 .formatVersion = 3;
-DisplayStrings = (
-"ŵ"
-);
 customParameters = (
 {
 name = "Use Typo Metrics";
@@ -26,7 +23,7 @@ fontMaster = (
 customParameters = (
 {
 name = typoAscender;
-value = 1040;
+value = 1045;
 },
 {
 name = typoDescender;
@@ -38,7 +35,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1040;
+value = 1045;
 },
 {
 name = winDescent;
@@ -46,7 +43,7 @@ value = 320;
 },
 {
 name = hheaAscender;
-value = 1040;
+value = 1045;
 },
 {
 name = hheaDescender;
@@ -298702,13 +298699,13 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
 }
 );
 },
 {
 key = licenseURL;
-value = "https://scripts.sil.org/OFL";
+value = "https://openfontlicense.org";
 }
 );
 unitsPerEm = 1040;
