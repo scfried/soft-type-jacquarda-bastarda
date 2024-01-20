@@ -1,6 +1,9 @@
 {
-.appVersion = "3234";
+.appVersion = "3151";
 .formatVersion = 3;
+DisplayStrings = (
+raar
+);
 customParameters = (
 {
 name = "Use Typo Metrics";
@@ -237047,7 +237050,7 @@ unicode = 7923;
 },
 {
 glyphname = z;
-lastChange = "2023-12-14 19:54:25 +0000";
+lastChange = "2024-01-20 22:13:10 +0000";
 layers = (
 {
 anchors = (
@@ -237889,6 +237892,15 @@ nodes = (
 (480,965,l),
 (405,965,l)
 );
+},
+{
+closed = 1;
+nodes = (
+(5,-80,l),
+(80,-80,l),
+(80,-155,l),
+(5,-155,l)
+);
 }
 );
 width = 560;
@@ -237898,7 +237910,7 @@ unicode = 122;
 },
 {
 glyphname = zacute;
-lastChange = "2023-12-14 19:54:25 +0000";
+lastChange = "2024-01-20 22:13:18 +0000";
 layers = (
 {
 anchors = (
@@ -238722,6 +238734,15 @@ nodes = (
 (480,965,l),
 (405,965,l)
 );
+},
+{
+closed = 1;
+nodes = (
+(5,-80,l),
+(80,-80,l),
+(80,-155,l),
+(5,-155,l)
+);
 }
 );
 width = 560;
@@ -238731,7 +238752,7 @@ unicode = 378;
 },
 {
 glyphname = zcaron;
-lastChange = "2023-12-14 19:54:25 +0000";
+lastChange = "2024-01-20 22:13:20 +0000";
 layers = (
 {
 anchors = (
@@ -239546,6 +239567,15 @@ nodes = (
 (480,965,l),
 (405,965,l)
 );
+},
+{
+closed = 1;
+nodes = (
+(5,-80,l),
+(80,-80,l),
+(80,-155,l),
+(5,-155,l)
+);
 }
 );
 width = 560;
@@ -239555,7 +239585,7 @@ unicode = 382;
 },
 {
 glyphname = zdotaccent;
-lastChange = "2023-12-14 19:54:25 +0000";
+lastChange = "2024-01-20 22:13:21 +0000";
 layers = (
 {
 anchors = (
@@ -240387,6 +240417,15 @@ nodes = (
 (480,1040,l),
 (480,965,l),
 (405,965,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(5,-80,l),
+(80,-80,l),
+(80,-155,l),
+(5,-155,l)
 );
 }
 );
@@ -298652,9 +298691,6 @@ e = -80;
 o = -80;
 q = -80;
 s = -80;
-};
-y = {
-z = 80;
 };
 };
 };

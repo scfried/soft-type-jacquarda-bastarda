@@ -1,5 +1,5 @@
 {
-.appVersion = "3234";
+.appVersion = "3151";
 .formatVersion = 3;
 classes = (
 {
@@ -13605,7 +13605,7 @@ unicode = 7923;
 },
 {
 glyphname = z;
-lastChange = "2023-08-17 21:56:52 +0000";
+lastChange = "2024-01-20 22:11:50 +0000";
 layers = (
 {
 anchors = (
@@ -13672,11 +13672,6 @@ ref = pixel;
 {
 alignment = -1;
 pos = (320,-240);
-ref = pixel;
-},
-{
-alignment = -1;
-pos = (0,-160);
 ref = pixel;
 },
 {
@@ -20467,9 +20462,6 @@ e = -80;
 o = -80;
 q = -80;
 s = -80;
-};
-y = {
-z = 80;
 };
 };
 };
